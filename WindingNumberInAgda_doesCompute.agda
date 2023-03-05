@@ -13,6 +13,10 @@ data S¹ : Type₀ where
   base : S¹
   loop : base ≡ base
 
+{-
+The definitions of helix and winding are taken from https://dl.acm.org/doi/abs/10.1145/3372885.3373825
+-}
+
 -- ΩS¹ ≡ ℤ
 helix : S¹ → Type₀
 helix base     = ℤ
