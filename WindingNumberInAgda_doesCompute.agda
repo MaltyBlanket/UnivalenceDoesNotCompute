@@ -28,6 +28,10 @@ helix (loop i) = sucPathℤ i
 winding : ΩS¹ → ℤ
 winding p = subst helix p (pos 0)
 
+{-
+The two following statements are proven by refl, so the winding number computes, because the univalence axiom is proven in cubical type theory.
+-}
+
 _ : winding (loop ∙ loop ∙ loop) ≡ pos 3
 _ = refl
 
